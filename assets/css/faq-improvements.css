@@ -1,0 +1,66 @@
+/* ========================================
+   FAQ - Melhorias seguindo estilo do site
+   ======================================== */
+
+/* Ajustes na seção FAQ */
+.faq.section {
+  background: var(--background-color);
+}
+
+/* Categoria FAQ - seguindo padrão do site */
+.faq-category {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin: 40px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+/* Melhorias no accordion mantendo estilo original */
+.faq .custom-accordion .accordion-item {
+  background-color: var(--surface-color);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  transition: all 0.3s ease;
+}
+
+.faq .custom-accordion .accordion-item:hover {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Botão do accordion */
+.faq .custom-accordion .accordion-item .btn-link {
+  background-color: var(--surface-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.faq .custom-accordion .accordion-item .btn-link:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+}
+
+/* Ícone do accordion */
+.faq .custom-accordion .accordion-item .btn-link:before {
+  color: var(--accent-color);
+  font-size: 18px;
+}
+
+/* Corpo do accordion */
+.faq .custom-accordion .accordion-item .accordion-body {
+  background-color: white;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .faq-category {
+    font-size: 18px;
+    margin: 32px 0 16px 0;
+  }
+}
+
+
