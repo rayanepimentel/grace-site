@@ -1,169 +1,210 @@
-# GRACE ICMC-USP - Site Oficial
+# 🌟 GRACE ICMC-USP - Site em React/Next.js
 
-Site oficial do GRACE (Grupo de Alunas de Ciências Exatas) do ICMC-USP São Carlos.
+Este é o site do GRACE (Grupo de Alunas de Ciências Exatas) migrado de HTML/CSS/JS para **Next.js 15** com **TypeScript** e **Tailwind CSS**.
 
-## 🎯 Sobre o Projeto
+## 🚀 Tecnologias Utilizadas
 
-O GRACE é um projeto de extensão do Instituto de Ciências Matemáticas e de Computação (ICMC) da Universidade de São Paulo (USP), campus São Carlos. O grupo é dedicado ao desenvolvimento de atividades na área de tecnologia, com foco no público feminino, especialmente estudantes dos níveis primário, secundário e superior.
-
-## 🚀 Como Rodar o Site
-
-### Opção 1: Abrir Diretamente no Navegador (Mais Simples)
-1. Navegue até o diretório do projeto
-2. Abra o arquivo `index.html` diretamente no seu navegador
-   - Clique duas vezes no arquivo, ou
-   - Arraste o arquivo para o navegador, ou
-   - Clique com botão direito → "Abrir com" → Escolha seu navegador
-
-### Opção 2: Usar Servidor Local com Python
-```bash
-# Python 3
-python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-```
-Depois acesse: `http://localhost:8000`
-
-### Opção 3: Usar Servidor Local com Node.js
-```bash
-# Instalar serve globalmente
-npm install -g serve
-
-# Rodar o servidor
-serve
-```
-
-### Opção 4: Usar Live Server (VS Code)
-1. Instale a extensão "Live Server" no VS Code
-2. Clique com botão direito em `index.html`
-3. Selecione "Open with Live Server"
+- **Next.js 15** - Framework React com App Router
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização utilitária
+- **Framer Motion** - Animações fluidas
+- **React Icons** - Ícones modernos
+- **Swiper** - Carrosséis e sliders
+- **AOS** - Animações on scroll
 
 ## 📁 Estrutura do Projeto
 
 ```
-GRACE/
-├── index.html                      # Página principal
-├── robotica-escola.html           # Página Robótica na Escola
-├── ciencia-dados.html             # Página Ciência de Dados
-├── escola-web.html                # Página Escola de Web
-├── pensamento-computacional.html  # Página Pensamento Computacional
-├── materiais.html                 # Página de Materiais (apostilas/videoaulas)
-├── blog.html                      # Blog
-├── blog-details.html              # Detalhes do blog
-├── portfolio-details.html         # Detalhes do portfólio
-├── service-details.html           # Detalhes de serviços
-├── starter-page.html              # Página inicial template
-├── assets/
-│   ├── css/
-│   │   └── main.css              # Estilos principais
-│   ├── js/
-│   │   └── main.js               # Scripts principais
-│   ├── img/                      # Imagens do site
-│   │   ├── blog/
-│   │   ├── colaboradores/
-│   │   ├── instagram/
-│   │   ├── masonry-portfolio/
-│   │   ├── midia/
-│   │   ├── pesquisa/
-│   │   └── parcerias/
-│   ├── vendor/                   # Bibliotecas de terceiros
-│   └── scss/                     # Arquivos SCSS (se aplicável)
-├── forms/
-│   └── contact.php               # Script de contato
-└── README.md                     # Este arquivo
+grace-site/
+├── app/                          # App Router do Next.js
+│   ├── page.tsx                 # Página inicial
+│   ├── layout.tsx               # Layout global
+│   ├── globals.css              # Estilos globais
+│   ├── equipe/                  # Página da equipe
+│   ├── robotica-escola/         # Página Robótica na Escola
+│   ├── escola-web/              # Página Escola de Web
+│   ├── ciencia-dados/           # Página Ciência de Dados
+│   └── pensamento-computacional/ # Página Pensamento Computacional
+├── components/                   # Componentes reutilizáveis
+│   ├── Header.tsx               # Cabeçalho com navegação
+│   ├── Footer.tsx               # Rodapé
+│   └── Hero.tsx                 # Seção hero com carrossel
+├── public/                       # Arquivos estáticos
+│   └── assets/                  # Imagens e recursos
+└── package.json                 # Dependências
 ```
 
-## ✨ Modificações Realizadas
+## 🎯 Funcionalidades Implementadas
 
-### 1. Meta Tags e SEO
-- ✅ Adicionadas meta tags completas com descrição e keywords
-- ✅ Meta tags Open Graph para compartilhamento em redes sociais
-- ✅ Título otimizado: "GRACE ICMC-USP - Grupo de Alunas de Ciências Exatas | São Carlos"
+### ✅ Componentes Globais
+- [x] Header responsivo com navegação dropdown
+- [x] Footer com links e redes sociais
+- [x] Hero com carrossel animado (3 slides)
+- [x] Layout global com metadata SEO
 
-### 2. Informações do ICMC-USP
-- ✅ Atualizado texto "Quem Somos" destacando vínculo com ICMC-USP
-- ✅ Endereço completo adicionado: Av. Trabalhador São-carlense, 400, Centro, São Carlos - SP
-- ✅ Informações de contato atualizadas
+### ✅ Páginas Principais
+- [x] **Home** - Página inicial com todas as seções
+  - Hero com carrossel
+  - Sobre o GRACE
+  - CTA para equipe
+  - Nossas Ações (4 projetos)
+  - Publicações científicas
+  - FAQ
+  - Contato
+- [x] **Equipe** - Grid de membros com filtros por categoria
+- [x] **Robótica na Escola** - Detalhes do projeto
+- [x] **Escola de Web** - Curso de desenvolvimento web
+- [x] **Ciência de Dados** - Projeto para ensino médio
+- [x] **Pensamento Computacional** - Atividades lúdicas
 
-### 3. Páginas de Ações Criadas
-- ✅ **Robótica na Escola** (`robotica-escola.html`)
-- ✅ **Ciência de Dados para Ensino Médio** (`ciencia-dados.html`)
-- ✅ **Escola de Web para Meninas** (`escola-web.html`)
-- ✅ **Pensamento Computacional** (`pensamento-computacional.html`)
+### ✅ Recursos
+- [x] Design responsivo (mobile-first)
+- [x] Animações com Framer Motion
+- [x] Navegação suave entre seções
+- [x] Otimização de imagens com Next.js Image
+- [x] SEO otimizado
+- [x] Acessibilidade (ARIA labels)
 
-### 4. Página de Materiais
-- ✅ Criada página `materiais.html` com seções:
-  - Apostilas (em desenvolvimento)
-  - Videoaulas (em desenvolvimento)
+## 🛠️ Instalação e Execução
 
-### 5. Links do Menu
-- ✅ Todos os links do menu de navegação foram atualizados
-- ✅ Links das ações apontam para as páginas corretas
-- ✅ Links de materiais funcionais
+### Pré-requisitos
+- Node.js 18+ instalado
+- npm ou yarn
 
-## 📋 Pendências
+### Passos
 
-### Assets Faltantes
-Os seguintes arquivos de imagem precisam ser adicionados em `assets/img/`:
-- `favicon.png` (32x32px) - Ícone da aba do navegador
-- `apple-touch-icon.png` (180x180px) - Ícone para dispositivos Apple
-- `logo.png` - Logo principal do GRACE para o cabeçalho
+1. **Navegue até o diretório do projeto:**
+```bash
+cd grace-site
+```
 
-Consulte `assets/img/README.md` para mais detalhes.
+2. **Instale as dependências:**
+```bash
+npm install
+```
 
-### Bibliotecas Vendor
-As bibliotecas JavaScript/CSS de terceiros precisam ser instaladas em `assets/vendor/`:
-- Bootstrap 5
-- Bootstrap Icons
-- AOS (Animate On Scroll)
-- Animate.css
-- GLightbox
-- Swiper
-- Imagesloaded
-- Isotope Layout
+3. **Execute o servidor de desenvolvimento:**
+```bash
+npm run dev
+```
 
-Consulte `assets/vendor/README.md` para instruções de instalação.
+4. **Abra no navegador:**
+```
+http://localhost:3000
+```
 
-### Conteúdo em Desenvolvimento
-- Apostilas para download
-- Videoaulas
-- Alguns links de projetos específicos
+## 📦 Scripts Disponíveis
 
-## 🔧 Configuração do Formulário de Contato
+```bash
+npm run dev      # Inicia servidor de desenvolvimento
+npm run build    # Cria build de produção
+npm run start    # Inicia servidor de produção
+npm run lint     # Executa linter
+```
 
-O formulário de contato em `forms/contact.php` precisa ser configurado com:
-1. Servidor PHP habilitado
-2. Configurações de email (SMTP)
-3. Validação e sanitização de dados
+## 🎨 Customização
 
-## 📱 Redes Sociais
+### Cores
+As cores principais estão definidas em `app/globals.css`:
+- **Primary (Pink)**: `#ff006e`
+- **Secondary (Purple)**: `#8338ec`
 
-- **Instagram:** [@grace.icmc.usp](https://www.instagram.com/grace.icmc.usp/)
-- **Facebook:** [grace.icmc.usp](https://www.facebook.com/grace.icmc.usp/)
-- **Twitter/X:** [@icmc_usp](https://x.com/icmc_usp)
-- **LinkedIn:** [Grace USP](https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A64666623&keywords=Grace%20USP)
+### Fontes
+Usando **Poppins** do Google Fonts, configurado em `app/layout.tsx`
 
-## 📞 Contato
+### Componentes
+Todos os componentes estão em `components/` e podem ser facilmente reutilizados e customizados.
 
-- **Email:** grace@icmc.usp.br
-- **Telefone:** (16) 3373-9700
-- **Endereço:** ICMC-USP, Av. Trabalhador São-carlense, 400, Centro, São Carlos - SP, 13566-590
+## 🌐 Deploy
 
-## 🤝 Parcerias
+### Vercel (Recomendado)
+1. Faça push do código para GitHub
+2. Conecte o repositório no [Vercel](https://vercel.com)
+3. Deploy automático!
 
-- Meninas Digitais (SBC)
-- ICMC-USP
-- Sociedade Brasileira de Computação (SBC)
+### Outras Plataformas
+- **Netlify**: Suporta Next.js
+- **AWS Amplify**: Configuração simples
+- **Railway**: Deploy rápido
+
+## 📝 Próximos Passos Sugeridos
+
+### Melhorias Futuras
+- [ ] Adicionar página de Materiais (apostilas e vídeos)
+- [ ] Implementar sistema de blog
+- [ ] Adicionar galeria de fotos dos eventos
+- [ ] Integrar formulário de contato com backend
+- [ ] Adicionar sistema de newsletter
+- [ ] Implementar modo escuro
+- [ ] Adicionar testes (Jest + React Testing Library)
+- [ ] Implementar i18n (internacionalização)
+- [ ] Adicionar analytics (Google Analytics/Plausible)
+- [ ] Criar painel administrativo (CMS)
+
+### Otimizações
+- [ ] Implementar ISR (Incremental Static Regeneration)
+- [ ] Adicionar Service Worker para PWA
+- [ ] Otimizar carregamento de imagens
+- [ ] Implementar lazy loading de componentes
+- [ ] Adicionar sitemap.xml automático
+
+## 🤝 Contribuindo
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
 ## 📄 Licença
 
-Copyright © GRACE-USP. Todos os direitos reservados.
+Este projeto pertence ao GRACE ICMC-USP.
 
-## 👥 Equipe de Desenvolvimento
+## 📧 Contato
 
-Site desenvolvido para o GRACE ICMC-USP São Carlos.
+**GRACE ICMC-USP**
+- Email: grace@icmc.usp.br
+- Instagram: [@grace.usp](https://instagram.com/grace.usp)
+- Facebook: [graceusp](https://facebook.com/graceusp)
 
 ---
 
-**Última atualização:** Junho de 2026
+## 🔄 Comparação: HTML vs React
+
+### Vantagens da Migração para React/Next.js
+
+#### ✅ Antes (HTML/CSS/JS)
+- Código duplicado em múltiplas páginas
+- Difícil manutenção do header/footer
+- Sem componentização
+- SEO básico
+- Performance limitada
+
+#### ✨ Depois (React/Next.js)
+- **Componentização**: Header/Footer reutilizáveis
+- **Manutenção**: Alterar uma vez, reflete em todas as páginas
+- **Performance**: Code splitting automático
+- **SEO**: Otimizado com metadata e SSR
+- **Developer Experience**: TypeScript, hot reload, melhor debugging
+- **Escalabilidade**: Fácil adicionar novas páginas e features
+- **Animações**: Framer Motion para transições suaves
+- **Imagens**: Otimização automática com Next.js Image
+
+### Estrutura de Código
+
+**Antes:**
+```html
+<!-- Repetido em cada página -->
+<header>...</header>
+<nav>...</nav>
+```
+
+**Depois:**
+```tsx
+// Componente único usado em todas as páginas
+<Header />
+```
+
+---
+
+Desenvolvido com ❤️ pela equipe GRACE
