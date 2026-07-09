@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -186,6 +186,20 @@ const teamMembers: TeamMember[] = [
       lattes: 'http://lattes.cnpq.br/3573746900379250',
     },
   },
+
+  // Conselho diretor
+  {
+    name: 'Mirela Teixeira Cazzolato',
+    team: 'Conselho Diretor',
+    role: 'Voluntária',
+    image: '/assets/img/colaboradores/mirelaCazzolato.png',
+    bio: 'Professora Doutora na Universidade de São Paulo (USP), no Instituto de Ciências Matemáticas e de Computação (ICMC), com passagem também pela FFCLRP-USP. É Doutora em Ciência da Computação e Matemática Computacional pelo ICMC-USP, com período de doutorado sanduíche no Instituto de Tecnologia de Karlsruhe (KIT), Alemanha, e pós-doutorado pelo InCor no projeto MIVisBD, incluindo estágio de pesquisa na Carnegie Mellon University (CMU). Suas áreas de interesse incluem mineração de grafos, visualização, detecção de anomalias, dados complexos, bancos de dados, análise e mineração de imagens e aprendizado de máquina. É entusiasta de projetos de ciência de dados que gerem impacto positivo na sociedade como um todo.',
+    social: {
+      linkedin: 'https://www.linkedin.com/in/mirelacazzolato/',
+      github: 'https://mtcazzolato.github.io/',
+      lattes: 'http://lattes.cnpq.br/5404143204431052'
+    },
+  },
 ];
 
 const categories = [
@@ -225,6 +239,116 @@ function Avatar({ name, image }: { name: string; image?: string }) {
   return (
     <div className="w-36 h-36 mx-auto mb-4 rounded-full border-4 border-gray-100 bg-gradient-to-br from-pink-200 to-purple-200 flex items-center justify-center">
       <span className="text-4xl font-bold text-white">{initial}</span>
+    </div>
+  );
+}
+
+function MemberCard({ member, index }: { member: TeamMember; index: number }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const isBioLong = (member.bio?.length ?? 0) > 90;
+
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4, delay: index * 0.05 }}
+        className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col"
+      >
+        <Avatar name={member.name} image={member.image} />
+
+        <span
+          className={`inline-block self-center text-xs font-semibold px-3 py-1 rounded-full mb-2 ${
+            teamColors[member.team] ?? 'bg-gray-100 text-gray-600'
+          }`}
+        >
+          {member.team}
+        </span>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-1 leading-snug">{member.name}</h3>
+        <p className="text-pink-600 font-semibold text-sm mb-2">{member.role}</p>
+
+        {member.bio && (
+          <div className="mt-1">
+            <p className="text-gray-500 text-sm leading-relaxed line-clamp-2">{member.bio}</p>
+            {isBioLong && (
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="text-pink-600 text-xs font-semibold mt-1 hover:text-purple-600 transition-colors"
+              >
+                Ver mais
+              </button>
+            )}
+          </div>
+        )}
+
+        <div className="mt-auto">
+          <SocialIcons social={member.social} />
+        </div>
+      </motion.div>
+
+      {isModalOpen && (
+        <BioModal member={member} onClose={() => setIsModalOpen(false)} />
+      )}
+    </>
+  );
+}
+
+function BioModal({ member, onClose }: { member: TeamMember; onClose: () => void }) {
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [onClose]);
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="bio-modal-title"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50"
+      onClick={onClose}
+    >
+      <div
+        className="bg-white rounded-2xl p-8 max-w-lg w-full max-h-[85vh] overflow-y-auto text-center relative shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          aria-label="Fechar"
+          className="absolute top-4 right-4 text-gray-400 hover:text-pink-600 transition-colors text-xl leading-none"
+        >
+          ✕
+        </button>
+
+        <Avatar name={member.name} image={member.image} />
+
+        <span
+          className={`inline-block self-center text-xs font-semibold px-3 py-1 rounded-full mb-2 ${
+            teamColors[member.team] ?? 'bg-gray-100 text-gray-600'
+          }`}
+        >
+          {member.team}
+        </span>
+
+        <h3 id="bio-modal-title" className="text-xl font-bold text-gray-900 mb-1 leading-snug">
+          {member.name}
+        </h3>
+        <p className="text-pink-600 font-semibold text-sm mb-4">{member.role}</p>
+
+        {member.bio && <p className="text-gray-600 text-sm leading-relaxed text-left">{member.bio}</p>}
+
+        <div className="mt-4">
+          <SocialIcons social={member.social} />
+        </div>
+      </div>
     </div>
   );
 }
@@ -374,34 +498,7 @@ export default function EquipePage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {filteredMembers.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col"
-              >
-                <Avatar name={member.name} image={member.image} />
-
-                <span
-                  className={`inline-block self-center text-xs font-semibold px-3 py-1 rounded-full mb-2 ${
-                    teamColors[member.team] ?? 'bg-gray-100 text-gray-600'
-                  }`}
-                >
-                  {member.team}
-                </span>
-
-                <h3 className="text-lg font-bold text-gray-900 mb-1 leading-snug">{member.name}</h3>
-                <p className="text-pink-600 font-semibold text-sm mb-2">{member.role}</p>
-
-                {member.bio && (
-                  <p className="text-gray-500 text-sm leading-relaxed line-clamp-2 mt-1">{member.bio}</p>
-                )}
-
-                <div className="mt-auto">
-                  <SocialIcons social={member.social} />
-                </div>
-              </motion.div>
+              <MemberCard key={member.name} member={member} index={index} />
             ))}
           </div>
 
