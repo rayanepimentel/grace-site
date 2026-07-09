@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { FaRobot, FaUsers, FaLaptopCode, FaGraduationCap } from 'react-icons/fa';
 import HeroAcoes from '../../components/HeroAcoes';
 
@@ -197,12 +198,12 @@ export default function RoboticaEscolaPage() {
             <p className="text-lg text-gray-700 mb-8">
               Entre em contato conosco para saber como trazer a Robótica na Escola para sua instituição de ensino.
             </p>
-            <a
+            <Link
               href="/#contact"
               className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-purple-600 transition-all duration-300"
             >
               Entre em Contato
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

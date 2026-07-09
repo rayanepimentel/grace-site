@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { FaChartLine, FaDatabase, FaPython, FaChartBar } from 'react-icons/fa';
 import HeroAcoes from '../../components/HeroAcoes';
 
@@ -170,12 +171,12 @@ export default function CienciaDadosPage() {
             <p className="text-lg text-gray-700 mb-8">
               Entre em contato para saber mais sobre como participar ou levar o projeto para sua escola.
             </p>
-            <a
+            <Link
               href="/#contact"
               className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-purple-600 transition-all duration-300"
             >
               Entre em Contato
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

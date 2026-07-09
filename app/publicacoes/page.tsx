@@ -81,6 +81,8 @@ export default function PublicacoesPage() {
 
                 <a
                   href={pub.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-pink-600 hover:text-purple-600 font-semibold transition-colors"
                 >
                   Ler Mais <FaExternalLinkAlt className="text-sm" />

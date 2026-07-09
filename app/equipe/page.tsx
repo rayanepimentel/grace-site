@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FaGraduationCap } from 'react-icons/fa';
 
@@ -395,12 +396,12 @@ export default function EquipePage() {
             <p className="text-lg text-gray-700 mb-8">
               Estamos sempre em busca de pessoas apaixonadas por educação e tecnologia para se juntar ao GRACE.
             </p>
-            <a
+            <Link
               href="/#contact"
               className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-purple-600 transition-all duration-300"
             >
               Entre em Contato
-            </a>
+            </Link>
           </div>
         </div>
       </section>

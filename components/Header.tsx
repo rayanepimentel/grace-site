@@ -13,13 +13,6 @@ export default function Header() {
   const [activeSection, setActiveSection] = useState('');
   const pathname = usePathname();
 
-  // Clear active section immediately when pathname changes
-  useEffect(() => {
-    if (pathname !== '/') {
-      setActiveSection('');
-    }
-  }, [pathname]);
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
@@ -289,6 +282,82 @@ export default function Header() {
                   </Link>
                   <Link href="/pensamento-computacional" className="mobile-dropdown-item" onClick={closeMobileMenu}>
                     PENSAMENTO COMPUTACIONAL
+                  </Link>
+                </div>
+              )}
+
+              <button
+                onClick={() => toggleDropdown('techSchool')}
+                className="mobile-nav-link flex items-center justify-between"
+              >
+                TECH SCHOOL <FiChevronDown />
+              </button>
+              {openDropdown === 'techSchool' && (
+                <div className="pl-4 space-y-2">
+                  <a
+                    href="https://grace.icmc.usp.br/techschool2026/index.html"
+                    className="mobile-dropdown-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMobileMenu}
+                  >
+                    TECHSCHOOL 2026
+                  </a>
+                  <a
+                    href="https://grace.icmc.usp.br/techschool2025/index.html"
+                    className="mobile-dropdown-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMobileMenu}
+                  >
+                    TECHSCHOOL 2025
+                  </a>
+                  <a
+                    href="https://grace.icmc.usp.br/techschool2024/index.html"
+                    className="mobile-dropdown-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMobileMenu}
+                  >
+                    TECHSCHOOL 2024
+                  </a>
+                  <a
+                    href="https://grace.icmc.usp.br/techschool2023/index.html"
+                    className="mobile-dropdown-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMobileMenu}
+                  >
+                    TECHSCHOOL 2023
+                  </a>
+                  <a
+                    href="https://grace.icmc.usp.br/techschool2022/index.html"
+                    className="mobile-dropdown-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMobileMenu}
+                  >
+                    TECHSCHOOL 2022
+                  </a>
+                </div>
+              )}
+
+              <button
+                onClick={() => toggleDropdown('pesquisaMidia')}
+                className="mobile-nav-link flex items-center justify-between"
+              >
+                PESQUISA & MÍDIA <FiChevronDown />
+              </button>
+              {openDropdown === 'pesquisaMidia' && (
+                <div className="pl-4 space-y-2">
+                  <Link href="/#results" className="mobile-dropdown-item" onClick={closeMobileMenu}>
+                    RESULTADOS
+                  </Link>
+                  <Link href="/#portfolio" className="mobile-dropdown-item" onClick={closeMobileMenu}>
+                    PESQUISAS
+                  </Link>
+                  <Link href="/#midia" className="mobile-dropdown-item" onClick={closeMobileMenu}>
+                    GRACE NA MÍDIA
                   </Link>
                 </div>
               )}

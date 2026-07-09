@@ -1,4 +1,4 @@
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -50,8 +50,37 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="border-t border-white/10 pt-8">
-            <p className="text-white/60 text-sm">
+            <p className="text-white/60 text-sm mb-2">
               Copyright <strong className="text-white font-semibold">GRACE-USP</strong> All Rights Reserved
+            </p>
+            <p className="text-white/40 text-xs">
+              Site desenvolvido por{' '}
+              <a
+                href="https://github.com/GabrielaMarculino/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-pink-400 transition-colors"
+              >
+                Gabriela Marculino
+              </a>
+              ,{' '}
+              <a
+                href="https://www.linkedin.com/in/rayanepimentel/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-pink-400 transition-colors"
+              >
+                Rayane Pimentel
+              </a>{' '}
+              e{' '}
+              <a
+                href="https://linkedin.com/in/maria-sinesio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-pink-400 transition-colors"
+              >
+                Maria Luiza
+              </a>
             </p>
           </div>
         </div>
