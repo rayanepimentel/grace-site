@@ -138,6 +138,18 @@ const teamMembers: TeamMember[] = [
       instagram: 'https://www.instagram.com/rebeca.maia3',
     },
   },
+  {
+    name: 'Darla Garcia',
+    team: 'RH',
+    role: 'Voluntária',
+    image: '/assets/img/colaboradores/darlaGarcia.png',
+    social: {
+      linkedin: 'https://www.linkedin.com/in/darla-garcia-alves-4a944821a/',
+      instagram: 'https://www.instagram.com/darlaa.garcia/',
+      github: 'https://github.com/darlagalves',
+      lattes: 'http://lattes.cnpq.br/1984661738360837'
+    },
+  },
 
   // Marketing
   {
@@ -160,6 +172,18 @@ const teamMembers: TeamMember[] = [
       linkedin: 'https://br.linkedin.com/in/tais-stefani-4a6226378',
       instagram: 'https://www.instagram.com/tais._._',
       lattes: 'http://lattes.cnpq.br/5092235851539645',
+    },
+  },
+  {
+    name: 'Guilherme Eid Godoy',
+    team: 'Marketing',
+    role: 'Voluntário',
+      image: '/assets/img/colaboradores/guilhermeGodoy.png',
+    social: {
+      linkedin: 'https://www.linkedin.com/in/guilherme-eid-godoy-456344313?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+      instagram: 'https://www.instagram.com/guilhermeeid?igsh=dGFxM2thZGFxeWI4',
+      github: 'https://github.com/guilhermeeid',
+      lattes: 'http://lattes.cnpq.br/3573746900379250',
     },
   },
 ];
