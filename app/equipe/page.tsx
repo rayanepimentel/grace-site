@@ -60,10 +60,11 @@ const teamMembers: TeamMember[] = [
     name: 'Thaís Laurino',
     team: 'RH',
     role: 'Liderança',
-    image: '/assets/img/colaboradores/thaisLaurino.png',
+    image: '/assets/img/colaboradores/thaisL.png',
     social: {
       linkedin: 'https://linkedin.com/in/thaislauriano',
       github: 'https://github.com/thaislauriano31',
+      lattes: 'http://lattes.cnpq.br/0442639037695860'
     },
   },
   {
