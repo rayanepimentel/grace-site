@@ -56,7 +56,7 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: 'Thaís',
+    name: 'Thaís Laurino',
     team: 'RH',
     role: 'Liderança',
     image: '/assets/img/colaboradores/thaisLaurino.png',
@@ -89,7 +89,7 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: 'Davi Andrade Laet',
+    name: 'Davi Andrade',
     team: 'Ensino',
     role: 'Voluntário',
     image: '/assets/img/colaboradores/daviAndrade.png',
@@ -114,19 +114,20 @@ const teamMembers: TeamMember[] = [
     image: '/assets/img/colaboradores/giovanneGrecco.png',
   },
   {
-    name: 'Luana',
+    name: 'Luana Vitorino',
     team: 'Ensino',
     role: 'Voluntária',
     image: '/assets/img/colaboradores/luanaVitorino.png',
     social: {
       linkedin: 'https://www.linkedin.com/in/luana-assuncao-vitorino/',
       github: 'https://github.com/luanavitorino07',
+      lattes: 'https://lattes.cnpq.br/7344453023281909'
     },
   },
 
   // RH
   {
-    name: 'Rebeca',
+    name: 'Rebeca Maia',
     team: 'RH',
     role: 'Voluntária',
     image: '/assets/img/colaboradores/rebecaMaia.png',
