@@ -17,7 +17,7 @@ import {
 import HeroAcoes from '../../components/HeroAcoes';
 
 const INSCRICAO_URL =
-  'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550200008&cod_edicao=26001&numseqofeedi=1';
+  'https://docs.google.com/forms/d/e/1FAIpQLSfonhqAc7B0_Jt30kqwYRGHFl9xUQY2h1XBMrEy_GEuNvMouQ/viewform';
 
 const modules = [
   {

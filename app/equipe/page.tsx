@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { FaGraduationCap } from 'react-icons/fa';
 
 type Social = {
   linkedin?: string;
   instagram?: string;
   github?: string;
   behance?: string;
+  lattes?: string;
 };
 
 type TeamMember = {
@@ -21,7 +23,7 @@ type TeamMember = {
 };
 
 const teamMembers: TeamMember[] = [
-  // Conselho Diretor
+  // Conselho Diretor e Lideranças
   {
     name: 'Lina Garcés',
     team: 'Conselho Diretor',
@@ -32,11 +34,9 @@ const teamMembers: TeamMember[] = [
       linkedin: 'https://br.linkedin.com/in/linagarcesphd',
     },
   },
-
-  // Geral
   {
     name: 'Brena Marques',
-    team: 'Geral',
+    team: 'Financeiro',
     role: 'Liderança',
     image: '/assets/img/colaboradores/brenaMarques.png',
     social: {
@@ -44,8 +44,6 @@ const teamMembers: TeamMember[] = [
       instagram: 'https://instagram.com/brena.maarques',
     },
   },
-
-  // Ensino
   {
     name: 'Rayane Pimentel',
     team: 'Ensino',
@@ -56,6 +54,27 @@ const teamMembers: TeamMember[] = [
       instagram: 'https://www.instagram.com/ray.pwd/',
     },
   },
+  {
+    name: 'Thaís',
+    team: 'RH',
+    role: 'Liderança',
+    social: {
+      linkedin: 'https://linkedin.com/in/thaislauriano',
+      github: 'https://github.com/thaislauriano31',
+    },
+  },
+  {
+    name: 'Isabelle Milena',
+    team: 'Marketing',
+    role: 'Liderança',
+    social: {
+      linkedin: 'https://www.linkedin.com/in/isabelle-milena-289a592b7',
+      instagram: 'https://www.instagram.com/whos_.milena',
+      lattes: 'http://lattes.cnpq.br/3959166119864044',
+    },
+  },
+
+  // Ensino
   {
     name: 'João Antônio Misson Milhorim',
     team: 'Ensino',
@@ -102,15 +121,6 @@ const teamMembers: TeamMember[] = [
 
   // RH
   {
-    name: 'Thaís',
-    team: 'RH',
-    role: 'Liderança',
-    social: {
-      linkedin: 'https://linkedin.com/in/thaislauriano',
-      github: 'https://github.com/thaislauriano31',
-    },
-  },
-  {
     name: 'Rebeca',
     team: 'RH',
     role: 'Voluntária',
@@ -133,13 +143,13 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: 'Isabelle Milena',
+    name: 'Taís Daniely',
     team: 'Marketing',
-    role: 'Líder',
-    bio: 'Líder de marketing do Grace.',
+    role: 'Voluntária',
     social: {
-      linkedin: 'https://www.linkedin.com/in/isabelle-milena-289a592b7',
-      instagram: 'https://www.instagram.com/whos_.milena',
+      linkedin: 'https://br.linkedin.com/in/tais-stefani-4a6226378',
+      instagram: 'https://www.instagram.com/tais._._',
+      lattes: 'http://lattes.cnpq.br/5092235851539645',
     },
   },
 ];
@@ -150,7 +160,7 @@ const categories = [
   { id: 'Ensino', label: 'Ensino' },
   { id: 'RH', label: 'RH' },
   { id: 'Marketing', label: 'Marketing' },
-  { id: 'Geral', label: 'Geral' },
+  { id: 'Financeiro', label: 'Financeiro' },
 ];
 
 const teamColors: Record<string, string> = {
@@ -158,7 +168,7 @@ const teamColors: Record<string, string> = {
   Ensino: 'bg-blue-100 text-blue-700',
   RH: 'bg-pink-100 text-pink-700',
   Marketing: 'bg-orange-100 text-orange-700',
-  Geral: 'bg-green-100 text-green-700',
+  Financeiro: 'bg-yellow-100 text-yellow-700',
 };
 
 function Avatar({ name, image }: { name: string; image?: string }) {
@@ -228,6 +238,12 @@ function SocialIcons({ social }: { social?: Social }) {
           <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029L23.726 17zm-8.738-4h4.654c-.118-1.615-1.106-2.194-2.322-2.194-1.316 0-2.145.764-2.332 2.194zM13 11.269C12.336 10.49 11.27 10 9.472 10H4V21h5.422c1.961 0 3.574-.611 4.341-1.917.493-.865.578-1.921.578-2.7 0-.99-.211-1.988-.906-2.614.441-.37.79-.999.565-2.5zm-5.58 1.397h2.322c.797 0 1.372.219 1.372 1.02 0 .786-.539 1.06-1.371 1.06H7.42v-2.08zm0 4h2.322c.918 0 1.593.205 1.593 1.17 0 .955-.665 1.17-1.593 1.17H7.42v-2.34z" />
         </svg>
       ),
+    },
+    {
+      key: 'lattes',
+      url: social.lattes,
+      label: 'Currículo Lattes',
+      icon: <FaGraduationCap className="w-5 h-5" />,
     },
   ].filter((l) => !!l.url);
 
