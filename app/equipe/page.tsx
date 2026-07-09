@@ -52,12 +52,14 @@ const teamMembers: TeamMember[] = [
     social: {
       linkedin: 'https://www.linkedin.com/in/rayanepimentel/',
       instagram: 'https://www.instagram.com/ray.pwd/',
+      lattes: 'http://lattes.cnpq.br/3428448311495994'
     },
   },
   {
     name: 'Thaís',
     team: 'RH',
     role: 'Liderança',
+    image: '/assets/img/colaboradores/thaisLaurino.png',
     social: {
       linkedin: 'https://linkedin.com/in/thaislauriano',
       github: 'https://github.com/thaislauriano31',
@@ -67,6 +69,7 @@ const teamMembers: TeamMember[] = [
     name: 'Isabelle Milena',
     team: 'Marketing',
     role: 'Liderança',
+    image: '/assets/img/colaboradores/isabeleMilena.png',
     social: {
       linkedin: 'https://www.linkedin.com/in/isabelle-milena-289a592b7',
       instagram: 'https://www.instagram.com/whos_.milena',
@@ -108,11 +111,13 @@ const teamMembers: TeamMember[] = [
     name: 'Giovanne Tomaszewski Grecco',
     team: 'Ensino',
     role: 'Voluntário',
+    image: '/assets/img/colaboradores/giovanneGrecco.png',
   },
   {
     name: 'Luana',
     team: 'Ensino',
     role: 'Voluntária',
+    image: '/assets/img/colaboradores/luanaVitorino.png',
     social: {
       linkedin: 'https://www.linkedin.com/in/luana-assuncao-vitorino/',
       github: 'https://github.com/luanavitorino07',
@@ -136,6 +141,7 @@ const teamMembers: TeamMember[] = [
     name: 'Natália Oliveira',
     team: 'Marketing',
     role: 'Voluntária',
+    image: '/assets/img/colaboradores/nataliaOliveira.png',
     social: {
       linkedin: 'https://www.linkedin.com/in/nat%C3%A1lia-oliveira-34b924410',
       instagram: 'https://www.instagram.com/nataliaoliveira.design',
@@ -146,6 +152,7 @@ const teamMembers: TeamMember[] = [
     name: 'Taís Daniely',
     team: 'Marketing',
     role: 'Voluntária',
+      image: '/assets/img/colaboradores/thaisDani.png',
     social: {
       linkedin: 'https://br.linkedin.com/in/tais-stefani-4a6226378',
       instagram: 'https://www.instagram.com/tais._._',
