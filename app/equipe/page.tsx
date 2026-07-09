@@ -29,7 +29,7 @@ const teamMembers: TeamMember[] = [
     name: 'Lina Garcés',
     team: 'Conselho Diretor',
     role: 'Coordenadora',
-    image: '/assets/img/colaboradores/linaGarces.png',
+    image: '/assets/img/colaboradores/linaGarces.webp',
     bio: 'Professora assistente do ICMC-USP. Coordenadora do GRACE.',
     social: {
       linkedin: 'https://br.linkedin.com/in/linagarcesphd',
@@ -39,7 +39,7 @@ const teamMembers: TeamMember[] = [
     name: 'Brena Marques',
     team: 'Financeiro',
     role: 'Liderança',
-    image: '/assets/img/colaboradores/brenaMarques.png',
+    image: '/assets/img/colaboradores/brenaMarques.webp',
     social: {
       linkedin: 'https://linkedin.com/in/brenamarques',
       instagram: 'https://instagram.com/brena.maarques',
@@ -49,7 +49,7 @@ const teamMembers: TeamMember[] = [
     name: 'Rayane Pimentel',
     team: 'Ensino',
     role: 'Liderança',
-    image: '/assets/img/colaboradores/rayanePimentel.png',
+    image: '/assets/img/colaboradores/rayanePimentel.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/rayanepimentel/',
       instagram: 'https://www.instagram.com/ray.pwd/',
@@ -60,7 +60,7 @@ const teamMembers: TeamMember[] = [
     name: 'Thaís Laurino',
     team: 'RH',
     role: 'Liderança',
-    image: '/assets/img/colaboradores/thaisL.png',
+    image: '/assets/img/colaboradores/thaisL.webp',
     social: {
       linkedin: 'https://linkedin.com/in/thaislauriano',
       github: 'https://github.com/thaislauriano31',
@@ -71,7 +71,7 @@ const teamMembers: TeamMember[] = [
     name: 'Isabelle Milena',
     team: 'Marketing',
     role: 'Liderança',
-    image: '/assets/img/colaboradores/isabeleMilena.png',
+    image: '/assets/img/colaboradores/isabeleMilena.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/isabelle-milena-289a592b7',
       instagram: 'https://www.instagram.com/whos_.milena',
@@ -84,7 +84,7 @@ const teamMembers: TeamMember[] = [
     name: 'João Antônio Misson Milhorim',
     team: 'Ensino',
     role: 'Voluntário',
-    image: '/assets/img/colaboradores/joaoMisson.jpeg',
+    image: '/assets/img/colaboradores/joaoMisson.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/joaomisson/',
       instagram: 'https://www.instagram.com/joao_misson/',
@@ -94,7 +94,7 @@ const teamMembers: TeamMember[] = [
     name: 'Davi Andrade',
     team: 'Ensino',
     role: 'Voluntário',
-    image: '/assets/img/colaboradores/daviAndrade.png',
+    image: '/assets/img/colaboradores/daviAndrade.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/davi-andrade-505728353/',
       instagram: 'https://www.instagram.com/davi_anddrade/',
@@ -104,6 +104,7 @@ const teamMembers: TeamMember[] = [
     name: 'Maria Luiza',
     team: 'Ensino',
     role: 'Voluntária',
+    image: '/assets/img/colaboradores/marialuiza.webp',
     social: {
       linkedin: 'https://linkedin.com/in/maria-sinesio',
       github: 'https://github.com/MariaSinesio',
@@ -113,13 +114,13 @@ const teamMembers: TeamMember[] = [
     name: 'Giovanne Tomaszewski Grecco',
     team: 'Ensino',
     role: 'Voluntário',
-    image: '/assets/img/colaboradores/giovanneGrecco.png',
+    image: '/assets/img/colaboradores/giovanneGrecco.webp',
   },
   {
     name: 'Luana Vitorino',
     team: 'Ensino',
     role: 'Voluntária',
-    image: '/assets/img/colaboradores/luanaVitorino.png',
+    image: '/assets/img/colaboradores/luanaVitorino.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/luana-assuncao-vitorino/',
       github: 'https://github.com/luanavitorino07',
@@ -132,7 +133,7 @@ const teamMembers: TeamMember[] = [
     name: 'Rebeca Maia',
     team: 'RH',
     role: 'Voluntária',
-    image: '/assets/img/colaboradores/rebecaMaia.png',
+    image: '/assets/img/colaboradores/rebecaMaia.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/rebeca-maia-pontes-79b35b96',
       instagram: 'https://www.instagram.com/rebeca.maia3',
@@ -142,7 +143,7 @@ const teamMembers: TeamMember[] = [
     name: 'Darla Garcia',
     team: 'RH',
     role: 'Voluntária',
-    image: '/assets/img/colaboradores/darlaGarcia.png',
+    image: '/assets/img/colaboradores/darlaGarcia.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/darla-garcia-alves-4a944821a/',
       instagram: 'https://www.instagram.com/darlaa.garcia/',
@@ -156,7 +157,7 @@ const teamMembers: TeamMember[] = [
     name: 'Natália Oliveira',
     team: 'Marketing',
     role: 'Voluntária',
-    image: '/assets/img/colaboradores/nataliaOliveira.png',
+    image: '/assets/img/colaboradores/nataliaOliveira.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/nat%C3%A1lia-oliveira-34b924410',
       instagram: 'https://www.instagram.com/nataliaoliveira.design',
@@ -167,7 +168,7 @@ const teamMembers: TeamMember[] = [
     name: 'Taís Daniely',
     team: 'Marketing',
     role: 'Voluntária',
-      image: '/assets/img/colaboradores/thaisDani.png',
+      image: '/assets/img/colaboradores/thaisDani.webp',
     social: {
       linkedin: 'https://br.linkedin.com/in/tais-stefani-4a6226378',
       instagram: 'https://www.instagram.com/tais._._',
@@ -178,7 +179,7 @@ const teamMembers: TeamMember[] = [
     name: 'Guilherme Eid Godoy',
     team: 'Marketing',
     role: 'Voluntário',
-      image: '/assets/img/colaboradores/guilhermeGodoy.png',
+      image: '/assets/img/colaboradores/guilhermeGodoy.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/guilherme-eid-godoy-456344313?utm_source=share_via&utm_content=profile&utm_medium=member_android',
       instagram: 'https://www.instagram.com/guilhermeeid?igsh=dGFxM2thZGFxeWI4',
@@ -192,7 +193,7 @@ const teamMembers: TeamMember[] = [
     name: 'Mirela Teixeira Cazzolato',
     team: 'Conselho Diretor',
     role: 'Voluntária',
-    image: '/assets/img/colaboradores/mirelaCazzolato.png',
+    image: '/assets/img/colaboradores/mirelaCazzolato.webp',
     bio: 'Professora Doutora na Universidade de São Paulo (USP), no Instituto de Ciências Matemáticas e de Computação (ICMC), com passagem também pela FFCLRP-USP. É Doutora em Ciência da Computação e Matemática Computacional pelo ICMC-USP, com período de doutorado sanduíche no Instituto de Tecnologia de Karlsruhe (KIT), Alemanha, e pós-doutorado pelo InCor no projeto MIVisBD, incluindo estágio de pesquisa na Carnegie Mellon University (CMU). Suas áreas de interesse incluem mineração de grafos, visualização, detecção de anomalias, dados complexos, bancos de dados, análise e mineração de imagens e aprendizado de máquina. É entusiasta de projetos de ciência de dados que gerem impacto positivo na sociedade como um todo.',
     social: {
       linkedin: 'https://www.linkedin.com/in/mirelacazzolato/',
@@ -227,7 +228,7 @@ function Avatar({ name, image }: { name: string; image?: string }) {
       <div className="relative w-36 h-36 mx-auto mb-4">
         <Image
           src={image}
-          alt={name}
+          alt={`Avatar de ${name}`}
           fill
           className="rounded-full object-cover border-4 border-gray-100"
           unoptimized={image.startsWith('http')}
