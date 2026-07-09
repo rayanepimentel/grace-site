@@ -79,6 +79,7 @@ export default function Header() {
   const isMateriaisActive = pathname === '/materiais';
   const isPesquisaMidiaActive =
     pathname === '/' && ['results', 'portfolio', 'midia'].includes(activeSection);
+  const isParticipeActive = pathname === '/participe';
   const isFaqActive = pathname === '/' && activeSection === 'faq';
   const isContactActive = pathname === '/' && activeSection === 'contact';
 
@@ -208,6 +209,12 @@ export default function Header() {
             </div>
 
             <Link
+              href="/participe"
+              className={`nav-link text-sm font-semibold transition-all duration-300 ${navItemClass(isParticipeActive)}`}
+            >
+              PARTICIPE
+            </Link>
+            <Link
               href="/#faq"
               className={`nav-link text-sm font-semibold transition-all duration-300 ${navItemClass(isFaqActive)}`}
             >
@@ -281,6 +288,9 @@ export default function Header() {
                 </div>
               )}
 
+              <Link href="/participe" className="mobile-nav-link">
+                PARTICIPE
+              </Link>
               <Link href="/#faq" className="mobile-nav-link">
                 FAQ
               </Link>
