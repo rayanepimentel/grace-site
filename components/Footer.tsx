@@ -10,7 +10,7 @@ export default function Footer() {
           
           {/* Social Links */}
           <div className="flex justify-center gap-3 mb-12">
-            <a
+            {/* <a
               href="https://x.com/icmc_usp"
               target="_blank"
               rel="noopener noreferrer"
@@ -18,7 +18,7 @@ export default function Footer() {
               aria-label="Twitter"
             >
               <FaTwitter />
-            </a>
+            </a> */}
             <a
               href="https://www.facebook.com/grace.icmc.usp/"
               target="_blank"
@@ -38,7 +38,7 @@ export default function Footer() {
               <FaInstagram />
             </a>
             <a
-              href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A64666623&keywords=Grace%20USP&origin=ENTITY_SEARCH_HOME_HISTORY&sid=TKo"
+              href="https://www.linkedin.com/company/grace-usp/about/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 rounded-full flex items-center justify-center text-xl transition-all duration-300 hover:scale-110 shadow-lg"
