@@ -143,7 +143,7 @@ export default function Header() {
                   CIÊNCIA DE DADOS PARA ENSINO MÉDIO
                 </Link>
                 <Link href="/escola-web" className="dropdown-item block px-4 py-3 text-sm text-gray-700 hover:text-pink-600 transition-colors">
-                  ESCOLA DE WEB PARA MENINAS
+                  ESCOLA DE PROGRAMAÇÃO WEB
                 </Link>
                 <Link href="/pensamento-computacional" className="dropdown-item block px-4 py-3 text-sm text-gray-700 hover:text-pink-600 transition-colors">
                   PENSAMENTO COMPUTACIONAL
@@ -241,7 +241,7 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="xl:hidden bg-white border-t border-gray-200 py-4">
             <nav className="flex flex-col space-y-2">
-              <Link href="/#hero" className="mobile-nav-link">
+              <Link href="/#hero" className="mobile-nav-link block">
                 HOME
               </Link>
               
@@ -280,7 +280,7 @@ export default function Header() {
                     CIÊNCIA DE DADOS
                   </Link>
                   <Link href="/escola-web" className="mobile-dropdown-item">
-                    ESCOLA DE WEB
+                    ESCOLA DE PROGRAMAÇÃO WEB
                   </Link>
                   <Link href="/pensamento-computacional" className="mobile-dropdown-item">
                     PENSAMENTO COMPUTACIONAL
@@ -288,13 +288,13 @@ export default function Header() {
                 </div>
               )}
 
-              <Link href="/participe" className="mobile-nav-link">
+              <Link href="/participe" className="mobile-nav-link block">
                 PARTICIPE
               </Link>
-              <Link href="/#faq" className="mobile-nav-link">
+              <Link href="/#faq" className="mobile-nav-link block">
                 FAQ
               </Link>
-              <Link href="/#contact" className="mobile-nav-link">
+              <Link href="/#contact" className="mobile-nav-link block">
                 CONTATO
               </Link>
             </nav>

@@ -220,8 +220,8 @@ export default function Home() {
                 <div className="icon text-pink-600">
                   <FaCode />
                 </div>
-                <h3 className="group-hover:text-pink-600 transition-colors">Escola de Web para Meninas</h3>
-                <p>Curso intensivo de desenvolvimento web focado em meninas e mulheres, do básico ao avançado.</p>
+                <h3 className="group-hover:text-pink-600 transition-colors">Escola de Programação Web</h3>
+                <p>Curso online de 5 meses sobre programação web para meninas e mulheres de todo o Brasil, em parceria com a REBECA.</p>
               </Link>
             </motion.div>
 

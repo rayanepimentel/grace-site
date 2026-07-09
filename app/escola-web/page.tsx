@@ -60,8 +60,8 @@ export default function EscolaWebPage() {
     <>
       {/* Hero Section */}
       <HeroAcoes
-        title="Escola de Web para Meninas"
-        subtitle="Curso de desenvolvimento web para meninas e mulheres — ICMC-USP"
+        title="Escola de Programação Web"
+        subtitle="Para meninas e mulheres de todo o Brasil — GRACE / ICMC-USP"
         icon={<FaCode />}
       />
 
@@ -76,9 +76,9 @@ export default function EscolaWebPage() {
             className="flex flex-col md:flex-row items-center justify-between gap-6 text-white"
           >
             <div>
-              <p className="text-sm font-semibold uppercase tracking-wide text-pink-100">Processo Seletivo Aberto</p>
-              <h2 className="text-2xl md:text-3xl font-bold">Inscrições até 27/07 — 100% gratuito</h2>
-              <p className="text-pink-50 mt-1">Resultado da 1ª chamada em 07/08 · 200 vagas · Curso a distância</p>
+              <p className="text-sm font-semibold uppercase tracking-wide text-pink-100">Inscrição de Alunas Aberta</p>
+              <h2 className="text-2xl md:text-3xl font-bold">Inscrições de 01/07 a 27/07 — 100% gratuito</h2>
+              <p className="text-pink-50 mt-1">Convocação das selecionadas em 07/08 · Curso online · De todo o Brasil</p>
             </div>
             <a
               href={INSCRICAO_URL}
@@ -104,19 +104,35 @@ export default function EscolaWebPage() {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Sobre o Curso</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              O <strong>Curso de Desenvolvimento Web para Meninas e Mulheres</strong> (código 550200008) é um curso de
-              extensão do ICMC-USP, na modalidade de aperfeiçoamento e 100% a distância, com o objetivo de aumentar a
-              participação feminina no mercado nacional de desenvolvimento de software.
+              A <strong>Escola de Programação Web para Meninas e Mulheres</strong> é organizada pelo Grupo de Alunas
+              de Ciências Exatas (GRACE), grupo de extensão do Instituto de Ciências Matemáticas e de Computação
+              (ICMC), USP - São Carlos. É um curso online de 5 meses sobre programação web para meninas e mulheres
+              de todo o Brasil.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              É voltado para estudantes de ensino fundamental II ou ensino médio de escolas públicas identificadas com
-              o gênero feminino, e também para pessoas adultas formadas no ensino médio que atuam em áreas diferentes
-              da computação e se identificam com o gênero feminino.
+              O curso é oferecido em parceria com a <strong>REBECA</strong> (Rede de Ensino Brasileira de Engenharias
+              e Ciências exAtas), um projeto de rede nacional que tem como missão incentivar mais meninas na área de
+              Computação e correlatas através da transmissão de conhecimentos e tecnologias, proporcionando uma base
+              em programação e web design para as alunas.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               Ao longo do curso, as alunas aprendem lógica de programação em Python, manipulação de dados,
               fundamentos de desenvolvimento web e criação de aplicações de dados interativas.
             </p>
+
+            <div className="mt-8 bg-pink-50 rounded-xl p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Pré-requisitos</h3>
+              <ul className="space-y-2 text-gray-700 text-sm">
+                <li>
+                  • Ser aluna de ensino médio ou dos últimos anos (8º e 9º) de ensino fundamental; ou ter o ensino
+                  médio finalizado
+                </li>
+                <li>• Ter acesso à internet, computador e smartphone</li>
+                <li>• Ter uma conta Gmail</li>
+                <li>• Se identificar como mulher cis, mulher trans ou pessoa não-binária</li>
+                <li>• Enviar um vídeo de motivação para participar do projeto</li>
+              </ul>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -127,23 +143,23 @@ export default function EscolaWebPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} viewport={{ once: true }}>
               <FaCalendarAlt className="text-3xl text-pink-600 mx-auto mb-2" />
-              <p className="font-bold text-gray-900">15/08/2026 a 30/01/2027</p>
-              <p className="text-sm text-gray-600">Período do curso</p>
+              <p className="font-bold text-gray-900">Agosto a Dezembro</p>
+              <p className="text-sm text-gray-600">Período das aulas</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.1 }} viewport={{ once: true }}>
               <FaClock className="text-3xl text-purple-600 mx-auto mb-2" />
-              <p className="font-bold text-gray-900">180 horas</p>
-              <p className="text-sm text-gray-600">Carga horária</p>
+              <p className="font-bold text-gray-900">5 meses</p>
+              <p className="text-sm text-gray-600">Duração do curso</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.2 }} viewport={{ once: true }}>
               <FaUsers className="text-3xl text-pink-600 mx-auto mb-2" />
-              <p className="font-bold text-gray-900">200 vagas</p>
-              <p className="text-sm text-gray-600">Gratuitas</p>
+              <p className="font-bold text-gray-900">Todo o Brasil</p>
+              <p className="text-sm text-gray-600">Gratuito</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.3 }} viewport={{ once: true }}>
               <FaMapMarkerAlt className="text-3xl text-purple-600 mx-auto mb-2" />
-              <p className="font-bold text-gray-900">ICMC-USP</p>
-              <p className="text-sm text-gray-600">A distância</p>
+              <p className="font-bold text-gray-900">GRACE / ICMC-USP</p>
+              <p className="text-sm text-gray-600">Curso online</p>
             </motion.div>
           </div>
         </div>
@@ -263,13 +279,10 @@ export default function EscolaWebPage() {
             className="max-w-4xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Quer Participar?</h2>
-            <p className="text-lg text-gray-700 mb-2">
-              Inscrições abertas até <strong>27/07</strong>. Resultado da 1ª chamada em <strong>07/08</strong>.
-            </p>
-            <p className="text-gray-600 mb-8">
-              Critérios de seleção: estudantes de ensino fundamental II, ensino médio ou pessoas com ensino médio
-              concluído que se identifiquem com o gênero feminino. Aprovação: 75% de frequência, nota de projeto
-              acima de 7 e nota de exercícios acima de 6.
+            <p className="text-lg text-gray-700 mb-6">
+              Inscrições de <strong>01/07 a 27/07</strong>. Convocação das selecionadas (por e-mail) em{' '}
+              <strong>07/08</strong>. Confirmação de vaga de <strong>07/08 a 12/08</strong>. Início das aulas em{' '}
+              <strong>15/08</strong>.
             </p>
             <a
               href={INSCRICAO_URL}
