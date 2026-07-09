@@ -64,6 +64,11 @@ export default function Header() {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    setOpenDropdown(null);
+  };
+
   const activePill =
     'px-4 py-2 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 text-white shadow-md shadow-pink-500/30';
   const inactiveLink = 'text-gray-800 hover:text-pink-600';
@@ -241,10 +246,10 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="xl:hidden bg-white border-t border-gray-200 py-4">
             <nav className="flex flex-col space-y-2">
-              <Link href="/#hero" className="mobile-nav-link block">
+              <Link href="/#hero" className="mobile-nav-link block" onClick={closeMobileMenu}>
                 HOME
               </Link>
-              
+
               <button
                 onClick={() => toggleDropdown('quemSomos')}
                 className="mobile-nav-link flex items-center justify-between"
@@ -253,13 +258,13 @@ export default function Header() {
               </button>
               {openDropdown === 'quemSomos' && (
                 <div className="pl-4 space-y-2">
-                  <Link href="/#about" className="mobile-dropdown-item">
+                  <Link href="/#about" className="mobile-dropdown-item" onClick={closeMobileMenu}>
                     Sobre Nós
                   </Link>
-                  <Link href="/equipe" className="mobile-dropdown-item">
+                  <Link href="/equipe" className="mobile-dropdown-item" onClick={closeMobileMenu}>
                     Equipe
                   </Link>
-                  <Link href="/#services" className="mobile-dropdown-item">
+                  <Link href="/#services" className="mobile-dropdown-item" onClick={closeMobileMenu}>
                     Parcerias
                   </Link>
                 </div>
@@ -273,28 +278,28 @@ export default function Header() {
               </button>
               {openDropdown === 'acoes' && (
                 <div className="pl-4 space-y-2">
-                  <Link href="/robotica-escola" className="mobile-dropdown-item">
+                  <Link href="/robotica-escola" className="mobile-dropdown-item" onClick={closeMobileMenu}>
                     ROBÓTICA NA ESCOLA
                   </Link>
-                  <Link href="/ciencia-dados" className="mobile-dropdown-item">
+                  <Link href="/ciencia-dados" className="mobile-dropdown-item" onClick={closeMobileMenu}>
                     CIÊNCIA DE DADOS
                   </Link>
-                  <Link href="/escola-web" className="mobile-dropdown-item">
+                  <Link href="/escola-web" className="mobile-dropdown-item" onClick={closeMobileMenu}>
                     ESCOLA DE PROGRAMAÇÃO WEB
                   </Link>
-                  <Link href="/pensamento-computacional" className="mobile-dropdown-item">
+                  <Link href="/pensamento-computacional" className="mobile-dropdown-item" onClick={closeMobileMenu}>
                     PENSAMENTO COMPUTACIONAL
                   </Link>
                 </div>
               )}
 
-              <Link href="/participe" className="mobile-nav-link block">
+              <Link href="/participe" className="mobile-nav-link block" onClick={closeMobileMenu}>
                 PARTICIPE
               </Link>
-              <Link href="/#faq" className="mobile-nav-link block">
+              <Link href="/#faq" className="mobile-nav-link block" onClick={closeMobileMenu}>
                 FAQ
               </Link>
-              <Link href="/#contact" className="mobile-nav-link block">
+              <Link href="/#contact" className="mobile-nav-link block" onClick={closeMobileMenu}>
                 CONTATO
               </Link>
             </nav>
