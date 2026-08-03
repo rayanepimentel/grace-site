@@ -92,31 +92,31 @@ export default function EscolaWebPage() {
         </div>
       </section> */}
       {/* Enrollment Banner */}
-<section className="bg-gradient-to-r from-pink-600 to-purple-600 py-8">
-  <div className="container mx-auto px-4">
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
-      className="flex flex-col md:flex-row items-center justify-between gap-6 text-white"
-    >
-      <div>
-        <p className="text-sm font-semibold uppercase tracking-wide text-pink-100">
-          Processo Seletivo
-        </p>
+      <section className="bg-gradient-to-r from-pink-600 to-purple-600 py-8">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="flex flex-col md:flex-row items-center justify-between gap-6 text-white"
+          >
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-pink-100">
+                Processo Seletivo
+              </p>
 
-        <h2 className="text-2xl md:text-3xl font-bold">
-          Resultado das selecionadas em 14/08
-        </h2>
+              <h2 className="text-2xl md:text-3xl font-bold">
+                Resultado das selecionadas em 14/08
+              </h2>
 
-        <p className="text-pink-50 mt-1">
-          Confirmação de vaga de 14/08 a 19/08 · Aula inaugural em 22/08
-        </p>
-      </div>
-    </motion.div>
-  </div>
-</section>
+              <p className="text-pink-50 mt-1">
+                Confirmação de vaga de 14/08 a 19/08 · Aula inaugural em 22/08
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section className="section bg-white">
@@ -295,44 +295,44 @@ export default function EscolaWebPage() {
       </section>
 
 
-{/* CTA Section */}
-<section className="section bg-white">
-  <div className="container mx-auto px-4">
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-      className="max-w-4xl mx-auto text-center"
-    >
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Dúvidas?
-      </h2>
+      {/* CTA Section */}
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto text-center"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Dúvidas?
+            </h2>
 
-      <p className="text-lg text-gray-700 mb-10">
-        As inscrições foram encerradas.
-        O <strong>resultado das selecionadas</strong> será divulgado por e-mail em
-        <strong> 14/08</strong>.
-        A confirmação de vaga acontecerá de
-        <strong> 14/08 a 19/08</strong> e a
-        <strong> aula inaugural</strong> será realizada em
-        <strong> 22/08</strong>.
-      </p>
+            <p className="text-lg text-gray-700 mb-10">
+              As inscrições foram encerradas.
+              O <strong>resultado das selecionadas</strong> será divulgado por e-mail em
+              <strong> 14/08</strong>.
+              A confirmação de vaga acontecerá de
+              <strong> 14/08 a 19/08</strong> e a
+              <strong> aula inaugural</strong> será realizada em
+              <strong> 22/08</strong>.
+            </p>
 
-      <div className="flex flex-wrap justify-center gap-8 text-gray-600 text-sm">
-        <span className="flex items-center gap-2">
-          <FaPhone className="text-pink-600" />
-          (16) 3373-8171
-        </span>
+            <div className="flex flex-wrap justify-center gap-8 text-gray-600 text-sm">
+              <span className="flex items-center gap-2">
+                <FaPhone className="text-pink-600" />
+                (16) 3373-8171
+              </span>
 
-        <span className="flex items-center gap-2">
-          <FaEnvelope className="text-pink-600" />
-          grace@icmc.usp.br
-        </span>
-      </div>
-    </motion.div>
-  </div>
-</section>
+              <span className="flex items-center gap-2">
+                <FaEnvelope className="text-pink-600" />
+                grace@icmc.usp.br
+              </span>
+            </div>
+          </motion.div>
+        </div>
+      </section>
     </>
   );
 }

@@ -23,15 +23,15 @@ const slides: Slide[] = [
     cta: 'Saiba Mais',
     link: '#about',
   },
-{
-  id: 2,
-  title: 'Escola de Programação Web',
-  highlight: 'Resultado em 14/08',
-  description:
-    'As inscrições foram encerradas. O resultado das selecionadas será divulgado em 14/08. Curso online, gratuito e para meninas e mulheres de todo o Brasil.',
-  cta: 'Saiba Mais',
-  link: '/escola-web',
-},
+  {
+    id: 2,
+    title: 'Escola de Programação Web',
+    highlight: 'Resultado em 14/08',
+    description:
+      'As inscrições foram encerradas. O resultado das selecionadas será divulgado em 14/08. Curso online, gratuito e para meninas e mulheres de todo o Brasil.',
+    cta: 'Saiba Mais',
+    link: '/escola-web',
+  },
   {
     id: 3,
     title: 'Mais que um Grupo,',
@@ -164,11 +164,10 @@ export default function Hero() {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
                   ? 'bg-white w-8'
                   : 'bg-white/50 hover:bg-white/70'
-              }`}
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
