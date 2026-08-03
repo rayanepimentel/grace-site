@@ -23,15 +23,15 @@ const slides: Slide[] = [
     cta: 'Saiba Mais',
     link: '#about',
   },
-  {
-    id: 2,
-    title: 'Escola de Programação Web:',
-    highlight: 'Processo Seletivo Aberto!',
-    description:
-      'As inscrições para novas alunas já estão abertas! Inscrições até 27/07 — resultado da 1ª chamada em 07/08. Curso online, de todo o Brasil, aprenda programação e faça parte dessa jornada.',
-    cta: 'Inscreva-se',
-    link: '/escola-web',
-  },
+{
+  id: 2,
+  title: 'Escola de Programação Web',
+  highlight: 'Resultado em 14/08',
+  description:
+    'As inscrições foram encerradas. O resultado das selecionadas será divulgado em 14/08. Curso online, gratuito e para meninas e mulheres de todo o Brasil.',
+  cta: 'Saiba Mais',
+  link: '/escola-web',
+},
   {
     id: 3,
     title: 'Mais que um Grupo,',
